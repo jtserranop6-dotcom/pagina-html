@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos de Cabello - Hacer un Pedido</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Hacer un Pedido</h1>
+    <p>Completa el formulario y te contactaremos para confirmar tu orden</p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Portada</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="orden.html">Hacer un pedido</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de pedido</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos del cliente</legend>
+          <p>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej: María López">
+          </p>
+          <p>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="Ej: maria@correo.com">
+          </p>
+          <p>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 300 123 4567">
+          </p>
+          <p>
+            <label for="direccion">Dirección de envío:</label>
+            <input type="text" id="direccion" name="direccion" required placeholder="Calle, número, barrio, ciudad">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Productos que deseas pedir</legend>
+          <p><input type="checkbox" id="prod-aguacate" name="productos" value="champu-aguacate">
+            <label for="prod-aguacate">Champú Hidratante de Aguacate (400 ml)</label>
+          </p>
+          <p><input type="checkbox" id="prod-keratina" name="productos" value="champu-keratina">
+            <label for="prod-keratina">Champú Fortalecedor de Keratina (350 ml)</label>
+          </p>
+          <p><input type="checkbox" id="prod-arbol" name="productos" value="champu-arbol-te">
+            <label for="prod-arbol">Champú Anticaspa Árbol de Té (300 ml)</label>
+          </p>
+          <p><input type="checkbox" id="prod-argan" name="productos" value="acondicionador-argan">
+            <label for="prod-argan">Acondicionador Reparador de Argán (400 ml)</label>
+          </p>
+          <p><input type="checkbox" id="prod-aloe" name="productos" value="acondicionador-aloe">
+            <label for="prod-aloe">Acondicionador Ligero de Aloe Vera (350 ml)</label>
+          </p>
+          <p><input type="checkbox" id="prod-coco" name="productos" value="mascarilla-coco">
+            <label for="prod-coco">Mascarilla Intensiva de Coco (250 ml)</label>
+          </p>
+          <p><input type="checkbox" id="prod-serum" name="productos" value="serum-vitamina-e">
+            <label for="prod-serum">Serum Capilar de Vitamina E (100 ml)</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Cantidad y observaciones</legend>
+          <p>
+            <label for="cantidad">Cantidad total de unidades:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="20" required>
+          </p>
+          <p>
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones" rows="4"
+              placeholder="Ej: Enviar en horario de la mañana..."></textarea>
+          </p>
+        </fieldset>
+
+        <p><button type="submit">Enviar pedido</button></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Imagen de referencia</h2>
+      <p>
+        <img src="https://images.unsplash.com/photo-1740490278517-21ec451914f6?w=700&h=450&fit=crop"
+          alt="Botellas de champú y acondicionador listas para envío" width="700" height="450">
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Productos de Cabello. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos de Cabello - Contacto</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Contacto</h1>
+    <p>Estamos para ayudarte con cualquier duda sobre nuestros productos</p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Portada</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="orden.html">Hacer un pedido</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Información de contacto</h2>
+      <p><strong>Toca el correo o el teléfono y se abrirá automáticamente:</strong></p>
+      <ul>
+        <li>
+          <strong>Correo:</strong>
+          <a href="mailto:info@productosdecabello.com?subject=Consulta%20Productos%20de%20Cabello">
+            info@productosdecabello.com
+          </a>
+          ← Toca para enviar correo
+        </li>
+        <li>
+          <strong>Teléfono / WhatsApp:</strong>
+          <a href="tel:+573001234567">+57 300 123 4567</a>
+          ← Toca para llamar
+        </li>
+        <li><strong>Horario:</strong> Lunes a viernes de 8:00 a.m. a 6:00 p.m.</li>
+        <li><strong>Dirección:</strong> Calle 45 # 12-34, Bogotá, Colombia</li>
+      </ul>
+      <p>
+        <img src="https://images.unsplash.com/photo-1747098393451-6b985f62a2c2?w=700&h=450&fit=crop"
+          alt="Productos de cuidado del cabello" width="700" height="450">
+      </p>
+    </section>
+
+    <section>
+      <h2>Formulario de consulta</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <p>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+          </p>
+          <p>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="Ej: juan@correo.com">
+          </p>
+          <p>
+            <label for="tipo-consulta">Tipo de consulta:</label>
+            <select id="tipo-consulta" name="tipo-consulta" required>
+              <option value="">Selecciona una opción</option>
+              <option value="producto">Información de un producto</option>
+              <option value="pedido">Estado de un pedido</option>
+              <option value="asesoria">Asesoría de cabello</option>
+              <option value="otro">Otro</option>
+            </select>
+          </p>
+          <p>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required
+              placeholder="Escribe aquí tu consulta..."></textarea>
+          </p>
+          <p><button type="submit">Enviar mensaje</button></p>
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <h2>También puedes</h2>
+      <ul>
+        <li><a href="productos.html">Ver el catálogo de productos</a></li>
+        <li><a href="orden.html">Realizar un pedido</a></li>
+        <li><a href="index.html">Regresar a la portada</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Productos de Cabello. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
