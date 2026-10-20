@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte de Incidencias y Formulario Accesible - SENA</title>
+</head>
+
+<body>
+
+  <!-- PORTADA / ENCABEZADO PRINCIPAL -->
+  <header>
+    <h1>Reporte de Incidencias Web - ADSO</h1>
+    <p><strong>Programa:</strong> Análisis y Desarrollo de Software (ADSO)</p>
+    <p><strong>Aprendiz:</strong> Jessica Tatiana Serrano Pérez</p>
+    <p><strong>Institución:</strong> Servicio Nacional de Aprendizaje (SENA)</p>
+    <hr>
+  </header>
+
+  <main>
+    <!-- SECCIÓN 1: PREPARACIÓN Y POLÍTICA DE DATOS -->
+    <section>
+      <h2>1. Política de Tratamiento de Datos y Privacidad</h2>
+      <p>
+        En cumplimiento de la normativa vigente de protección de datos personales, los datos
+        recolectados en este formulario de reporte serán utilizados exclusivamente para dar
+        seguimiento y solución a las incidencias técnicas reportadas en el sistema.
+      </p>
+      <p>
+        Al diligenciar y enviar el siguiente formulario, usted autoriza el tratamiento de su
+        información para fines académicos y de soporte técnico del programa.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- SECCIÓN 2: FORMULARIO ACCESIBLE Y CONTROLADO -->
+    <section>
+      <h2>2. Formulario de Registro de Incidencias</h2>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- CAMPOS BÁSICOS DEL APRENDIZ Y DETALLES -->
+        <fieldset>
+          <legend>Datos Básicos del Informante</legend>
+
+          <p>
+            <label for="nombre-aprendiz">Nombre del Aprendiz:</label><br>
+            <input type="text" id="nombre-aprendiz" name="nombre_aprendiz" required
+              placeholder="Ej: Jessica Tatiana Serrano">
+          </p>
+
+          <p>
+            <label for="correo-aprendiz">Correo Electrónico:</label><br>
+            <input type="email" id="correo-aprendiz" name="correo_aprendiz" required
+              placeholder="Ej: jtserranop6@gmail.com">
+          </p>
+
+          <p>
+            <label for="tipo-incidencia">Tipo de Incidencia:</label><br>
+            <select id="tipo-incidencia" name="tipo_incidencia" required>
+              <option value="">-- Seleccione una opción --</option>
+              <option value="error-html">Error de Estructura HTML</option>
+              <option value="accesibilidad">Problema de Accesibilidad (a11y)</option>
+              <option value="git">Fallo en Control de Versiones / Git</option>
+              <option value="otro">Otro</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <!-- LISTA DE CHEQUEO AGRUPADA Y ÁREA DE DESCRIPCIÓN -->
+        <fieldset>
+          <legend>Gravedad y Descripción de la Incidencia</legend>
+
+          <p><strong>Nivel de Impacto / Gravedad:</strong></p>
+          <p>
+            <input type="radio" id="gravedad-baja" name="gravedad" value="baja" required>
+            <label for="gravedad-baja">Baja (No impide el desarrollo)</label>
+          </p>
+          <p>
+            <input type="radio" id="gravedad-media" name="gravedad" value="media">
+            <label for="gravedad-media">Media (Afecta parcialmente la entrega)</label>
+          </p>
+          <p>
+            <input type="radio" id="gravedad-alta" name="gravedad" value="alta">
+            <label for="gravedad-alta">Alta (Bloquea la ejecución del código)</label>
+          </p>
+
+          <p>
+            <label for="descripcion">Descripción detallada del problema:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="5" cols="50" required
+              placeholder="Describe paso a paso la incidencia encontrada..."></textarea>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <!-- CARGA DE ARCHIVOS Y BOTÓN DE REGISTRO -->
+        <fieldset>
+          <legend>Evidencias y Envío</legend>
+
+          <p>
+            <label for="evidencia-foto">Adjuntar captura de pantalla (Imagen de evidencia):</label><br>
+            <input type="file" id="evidencia-foto" name="evidencia_foto" accept="image/*">
+          </p>
+
+          <p>
+            <button type="submit">Registrar Incidencia</button>
+            <button type="reset">Limpiar Formulario</button>
+          </p>
+        </fieldset>
+
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <!-- PIE DE PÁGINA CON AUTORÍA DEL DOCUMENTO -->
+  <footer>
+    <p>Desarrollado por <strong>Jessica Tatiana Serrano Pérez</strong> - SENA ADSO 2026</p>
+    <address>
+      Contacto: <a href="mailto:jtserranop6@gmail.com">jtserranop6@gmail.com</a>
+    </address>
+  </footer>
+
+</body>
+
+</html>
